@@ -73,7 +73,8 @@
 
 
 ### Ответ 4
-1. 
+1. root@TEST1:/home/dk1/terraform# wget -o https://hashicorp-releases.yandexcloud.net/terraform/1.5.5/terraform_1.5.5_linux_amd64.zip
+
 2.
 3.
 4.
