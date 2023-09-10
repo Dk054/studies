@@ -26,6 +26,34 @@
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
 
 ---
+''
+pipeline {
+ agent any
+ options {
+     skipDefaultCheckout true
+}
+environment {
+    GO_DIR = '/usr/bin/'
+}
+stages {
+stage('clone repo') {
+ steps {
+     git branch: 'main', url: 'https://github.com/Dk054/sdvps-materials.git', credentialsId: 'github_creds'}
+  }
+  stage('Test go') {
+   steps {
+    sh '${GO_DIR}go test .'
+   }
+  }
+  stage('Docker build') {
+   steps {
+    sh 'docker build . -t ubuntu-bionic:8082/hello-world:v$BUILD_NUMBER'
+   }
+  }
+  }
+ }
+ ''
+![image](https://github.com/Dk054/studies/assets/139000762/948aa096-03c6-4759-bf2a-2e4516c64451)
 
 ### Задание 3
 
