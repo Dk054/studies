@@ -31,6 +31,10 @@
 3. Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
 4. Приложите в файл README.md текст использованных команд в GitHub
 ---
+![image](https://github.com/Dk054/studies/assets/139000762/d03d4acd-c3e1-4fdd-b122-a36951a6b3bc)
+![image](https://github.com/Dk054/studies/assets/139000762/9a9cf735-8436-460b-81f8-e878064ca54d)
+![image](https://github.com/Dk054/studies/assets/139000762/59142e0d-f427-4221-a528-fc6d22c3e36b)
+![image](https://github.com/Dk054/studies/assets/139000762/59fd9a4f-af75-44f9-9f4a-abbbf5a9033c)
 
 
 
