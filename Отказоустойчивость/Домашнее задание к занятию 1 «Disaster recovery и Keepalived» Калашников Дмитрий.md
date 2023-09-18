@@ -11,7 +11,15 @@
 - На проверку отправьте получившуюся схему в формате pkt и скриншот, где виден процесс настройки маршрутизатора.
 
 ------
-[Схема](https://github.com/Dk054/studies/blob/main/Отказоустойчивость/hsrp_advanced.pkt)
+
+![image](https://github.com/Dk054/studies/assets/139000762/b84b8fe1-2813-40ff-bd47-d1761ccf6361)
+
+![image](https://github.com/Dk054/studies/assets/139000762/a0fc3d11-6ab1-4310-af95-2f7d14c67b87)
+
+
+![image](https://github.com/Dk054/studies/assets/139000762/7c4fd5b9-8819-4649-bed4-b0cefb452d25)
+
+Вот [cхема](https://github.com/Dk054/studies/blob/main/Отказоустойчивость/hsrp_advanced.pkt)
 ------
 
 ### Задание 2
