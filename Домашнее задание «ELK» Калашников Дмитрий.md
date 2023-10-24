@@ -34,6 +34,9 @@
 *Приведите скриншот интерфейса Kibana на странице http://<ip вашего сервера>:5601/app/dev_tools#/console, где будет выполнен запрос GET /_cluster/health?pretty*.
 
 ---
+![image](https://github.com/Dk054/studies/assets/139000762/ec3ed2ec-febd-4d86-a00a-26cf281f350e)
+
+---
 
 ### Задание 3. Logstash
 
