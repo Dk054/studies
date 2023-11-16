@@ -28,15 +28,16 @@ ALTER USER 'sys_temp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'secr
 ---
 ### Ответ 1
 
-1.3. Выполните запрос на получение списка пользователей в базе данных. (скриншот)
+### 1.3. Выполните запрос на получение списка пользователей в базе данных. (скриншот)
 ![image](https://github.com/Dk054/studies/assets/139000762/e0c1e52b-a7bb-4cdd-b0b2-8629f0f591cc)
-1.5. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
+### 1.5. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
 ![image](https://github.com/Dk054/studies/assets/139000762/b67b9218-d773-4c3f-a971-9ae73105ea66)
 ![image](https://github.com/Dk054/studies/assets/139000762/1d4546ab-2efa-4acf-adef-9d16f9224710)
-
-1.6. Переподключитесь к базе данных от имени sys_temp.
+### 1.6. Переподключитесь к базе данных от имени sys_temp.
 ![image](https://github.com/Dk054/studies/assets/139000762/da64cf88-ac0f-44ff-b318-eec4f1a4f077)
 ![image](https://github.com/Dk054/studies/assets/139000762/e21daff1-7ada-43f7-ac22-629ce6c0293d)
+### 1.9 При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
+![image](https://github.com/Dk054/studies/assets/139000762/6fabd8d9-1021-42ed-a207-dadd89b85ec8)
 
 
 
@@ -48,7 +49,30 @@ ALTER USER 'sys_temp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'secr
 Название таблицы | Название первичного ключа
 customer         | customer_id
 ```
-
+Название таблицы             | Название первичного ключа
+actor                        | actor_id
+actor_info                   | 
+address                      | address_id
+category                     | category_id
+city                         | city_id
+country                      | country_id
+customer                     | customer_id
+customer_list                | 
+film                         | film_id
+film_actor                   | actor_id, film_id
+film_category                | film_id, category_id
+film_list                    | 
+film_text                    | film_id
+inventory                    | inventory_id
+language                     | language_id
+nicer_but_slower_film_list   | 
+payment                      | payment_id
+rental                       | rental_id
+sales_by_film_category       | 
+sales_by_store               | 
+staff                        | staff_id
+staff_list                   | 
+store                        | store_id
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
