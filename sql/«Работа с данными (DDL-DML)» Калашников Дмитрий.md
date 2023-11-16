@@ -77,12 +77,24 @@ staff_list                   |
 store                        | store_id
 ```
 
-## Дополнительные задания (со звёздочкой*)
-Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
-
 ### Задание 3*
 3.1. Уберите у пользователя sys_temp права на внесение, изменение и удаление данных из базы sakila.
 
 3.2. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
+
+### Ответ 3
+
+![image](https://github.com/Dk054/studies/assets/139000762/62245e32-bb82-4c91-be9c-827f71423406)
+
+
+```
+mysql> REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'sys_temp'@'localhost';
+mysql> show grants for 'sys_temp'@'localhost';
+mysql> GRANT INSERT, UPDATE, DELETE ON `sakila`.* TO 'sys_temp'@'localhost';
+mysql> show grants for 'sys_temp'@'localhost';
+mysql> REVOKE INSERT, UPDATE, DELETE ON `sakila`.* FROM 'sys_temp'@'localhost';
+mysql> show grants for 'sys_temp'@'localhost';
+```
+
 
 *Результатом работы должны быть скриншоты обозначенных заданий, а также простыня со всеми запросами.*
