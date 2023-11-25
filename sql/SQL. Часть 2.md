@@ -41,6 +41,15 @@ FROM payment p
 GROUP BY MONTH(payment_date)
 ORDER BY SUM(p.amount ) DESC
 LIMIT 1;
+
+ну или по годам и месяцам (хотя резултат один и тот же
+
+SELECT DATE_FORMAT(payment.payment_date, '%Y-%m') AS current_month, COUNT(rental.rental_id) AS rental_count
+FROM payment
+JOIN rental ON payment.rental_id = rental.rental_id
+GROUP BY current_month
+ORDER BY SUM(payment.amount) DESC
+LIMIT 1;
 ```
 ### Задание 4
 Посчитайте количество продаж, выполненных каждым продавцом. Добавьте вычисляемую колонку «Премия». Если количество продаж превышает 8000, то значение в колонке будет «Да», иначе должно быть значение «Нет».
